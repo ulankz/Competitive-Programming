@@ -87,8 +87,7 @@ public class CircularLinkedList {
         last =cl.addEnd(last, 49);
         last =cl.addEnd(last, 6);
         cl.printList(last);
-       // last =cl.addAfter(last,99,49);
-        cl.printList(last);
+     
     }
     
 }
