@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Queue;
+package models.stack;
 
 /**
  *
  * @author Ulan
  */
 public class Node {
-    int data;
-    Node next;
-    Node(int data){
-        this.next = null;
-        this.data = data;
-    }
+	Node next;
+	int data;
+
+	Node(int data) {
+		this.next = null;
+		this.data = data;
+	}
 }
