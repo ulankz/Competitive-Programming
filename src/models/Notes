@@ -1,0 +1,23 @@
+
+	 * Space Complexity of an algorithm is total space taken by the algorithm with
+	 * respect to the input size. Space complexity includes both Auxiliary space and
+	 * space used by input. For example, if we want to compare standard sorting
+	 * algorithms on the basis of space, then Auxiliary Space would be a better
+	 * criteria than Space Complexity. Merge Sort uses O(n) auxiliary space,
+	 * Insertion sort and Heap Sort use O(1) auxiliary space. Space complexity of
+	 * all these sorting algorithms is O(n) though. For example if we need to create
+	 * an array of size n, it will require O(n) space. If we need a two-dimensional
+	 * array of size n x n , it will require O(n2). Stack space in recursive calls
+	 * counts too as extra space required by a program.
+	 
+		int sum(int n) {
+			if (n <= 0)
+				return 0;
+			return n + sum(n - 1);
+		}
+	
+	 * In the above example function, each call adds a new level to the stack. Each
+	 * of these calls is added to the call stack and takes up actual memory. So code
+	 * like this would take O(n) time and O(n) auxiliary space. However, just
+	 * because you have n calls total doesn’t mean it takes O(n) space
+	
