@@ -1,6 +1,14 @@
 package main;
 
+import java.util.ArrayList;
+
 import models.array.KthPermutationSequence;
+import models.array.PermutationRank;
+import models.array.PermutationRankArrayEditorial;
+import models.array.PermutationRankArrayFastest;
+import models.array.PermutationRankEditorial;
+import models.array.PermutationRankFastest;
+import models.array.PermutationRankLightWeight;
 
 public class ForLoops {
 
@@ -96,10 +104,10 @@ public class ForLoops {
 		// System.out.println("\nSTRING PERMUTATION V2");
 		// new Permutation().getPermutation_v2("ABC");
 		// System.out.println("\nSTRING PERMUTATION V3");
-		// ArrayList<Integer> listInput = new ArrayList<>();
-		// listInput.add(1);
-		// listInput.add(2);
-		// listInput.add(1);
+		ArrayList<Integer> listInput = new ArrayList<>();
+		listInput.add(1);
+		listInput.add(2);
+		listInput.add(3);
 		// new ListPermutation().printList(new ListPermutation().permute(listInput));
 		System.out.println("\nGET Kth PERMUTATION");
 		System.out.println(new KthPermutationSequence().getKthPermutation(3, 3));
@@ -126,7 +134,19 @@ public class ForLoops {
 		System.out.println(KthPermutationSequence.getPermutationArrayLightWeight(3, 3));
 		System.out.println("\nGET Kth PERMUTATION FASTEST WITH ARRAY");
 		System.out.println(KthPermutationSequence.getPermutationArrayFastest(3, 3));
-
+		// System.out.println("\nGET NEXT PERMUTATION WITH ARRAYLIST");
+		// NextPermutation.get_nextPermutation(listInput);
+		// System.out.println(listInput.toString());
+		// System.out.println("\nGET NEXT PERMUTATION EDITORIAL");
+		// NextPermutation.get_nextPermutationEditorial(listInput);
+		// System.out.println(listInput.toString());
+		System.out.println(PermutationRank.getPermutationRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankEditorial().getRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankFastest().getRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankLightWeight().getRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankArrayEditorial().getRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankArrayEditorial().findRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankArrayFastest().getRank("DTNGJPURFHYEW"));
 	}
 
 }

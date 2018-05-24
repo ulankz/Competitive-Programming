@@ -5,6 +5,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Remember that the total number of permutations of { n} items is given by {
+ * n!} which grows large very quickly: A 32 bit integer can only hold { 12!} , a
+ * 64 bit integer only { 20!} . It becomes difficult to take the
+ * straight-forward approach of generating all permutations then taking a random
+ * sample of them.
+ * 
+ * @author Ulan
+ *
+ */
 public class KthPermutationSequence {
 	public String getKthPermutation(int n, int k) {
 		List<Integer> list = new ArrayList<Integer>();
