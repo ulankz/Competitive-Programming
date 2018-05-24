@@ -6,6 +6,7 @@ import models.array.KthPermutationSequence;
 import models.array.PermutationRank;
 import models.array.PermutationRankArrayEditorial;
 import models.array.PermutationRankArrayFastest;
+import models.array.PermutationRankAuxiliaryArray;
 import models.array.PermutationRankEditorial;
 import models.array.PermutationRankFastest;
 import models.array.PermutationRankLightWeight;
@@ -147,6 +148,7 @@ public class ForLoops {
 		System.out.println(new PermutationRankArrayEditorial().getRank("DTNGJPURFHYEW"));
 		System.out.println(new PermutationRankArrayEditorial().findRank("DTNGJPURFHYEW"));
 		System.out.println(new PermutationRankArrayFastest().getRank("DTNGJPURFHYEW"));
+		System.out.println(new PermutationRankAuxiliaryArray().getPermutationRank("DTNGJPURFHYEW"));
 	}
 
 }

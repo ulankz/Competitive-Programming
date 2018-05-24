@@ -20,12 +20,15 @@ public class PermutationRankArrayEditorial {
 		return rank % M;
 	}
 
+	// Removes a character ch from count[] array
 	private static void updateFrequency(int a[], char ch) {
 		for (int i = ch; i < 256; i++) {
 			a[i]--;
 		}
 	}
 
+	// Construct a count array where value at every index
+	// contains count of smaller characters in whole string
 	private static int[] getFrequencies(String s) {
 		int a[] = new int[256];
 
